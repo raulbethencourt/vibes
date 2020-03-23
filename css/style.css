@@ -110,7 +110,7 @@ p {
 #incal {
     margin: 0;
     position: relative;
-    background-image: url("/img/banner_1.jpg");
+    background-image: url("img/banner_1.jpg");
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
