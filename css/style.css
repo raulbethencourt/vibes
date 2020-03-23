@@ -1,3 +1,10 @@
+/* #d2d09f claro base
+   #e9d7a9 claro beig
+   #b56a65 rojo
+   #d5a57f naranja
+   #4b3132 oscuro
+    */
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +12,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(/img/background.jpg);
+    background-color: #d5a57f;
 }
 
 ul {
@@ -22,44 +29,96 @@ p {
     margin: auto;
 }
 
-nav {
+#nav_bar {
     width: 100%;
-    background: #e9d7a9;
+    background: #e9d7a900;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     position: sticky;
     top: 0;
 }
 
-.fas.fa-bars {
+#nav_bar label  {
     display: none;
 }
 
-#nav_buttons {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#nav_bar input {
+    display: none;
 }
 
-nav a {
-    display: inline-block;
-    padding: 10px;
-    box-sizing: border-box;
-    color:  #fff;
-    text-decoration: none;
+#nav_bar ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0em;
 }
+
+#nav_bar a {
+    padding: 20px;
+    color:  #4b3132;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 768px) {
+    #nav_bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #nav_bar label {
-        display: inline-block;
-        color: #fff;
-        background: #a02620;
+        display: block;
+        color:#4b3132;
         font-style: normal;
-        font-size: 1.2em;
+        font-size: 2em;
         padding: 10px;
+    }
+
+    #hamburger {
+        display: inline-block;
+    }
+
+    #nav_bar img {
+        display: none;
     }
 
     #nav_bar ul li {
         display: block;
+        padding: 5px 0;
     }
 
-    
+    #nav_bar ul li {
+        border-top: 1px solid #4b3132;
+    }
+
+    #nav_bar ul {
+        display: none;
+    }
+
+    #nav_bar input:checked ~ ul {
+        display: block;
+        width: 50%;
+    }
 }
+
+#banner figure {
+    margin: 0;
+}
+
+#incal {
+    margin: 0;
+    position: relative;
+    background-image: url("/img/banner_1.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+   
+   
+
+   
+    
