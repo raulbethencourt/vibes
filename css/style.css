@@ -51,7 +51,6 @@ p {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    margin: 0em;
 }
 
 #nav_bar a {
@@ -103,21 +102,19 @@ p {
     }
 }
 
-#banner figure {
-    margin: 0;
+#banner {
+    width: 100%;
 }
 
-#incal {
-    margin: 0;
-    position: relative;
-    background-image: url("/banner_1.jpg");
+#banner figure {
+    margin: 0em;
+    background-image: url("img/banner_1.jpg");
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-} 
-   
+}
    
 
    
