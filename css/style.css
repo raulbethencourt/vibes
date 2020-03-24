@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -33,6 +37,16 @@ p {
 
 h3 {
   font-size: 1.6em;
+}
+
+hr {
+  width: 80%;
+  color: #db8d4e;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 #wrapper {
@@ -103,7 +117,6 @@ h3 {
   width: 7em;
   background-color: #e9d7a9;
   color: #4b3132;
-  text-decoration: none;
 }
 
 #histoire {
@@ -221,6 +234,252 @@ h3 {
 #portfolio img {
   width: 325px;
   height: 250px;
+  display: block;
+}
+
+#portfolio img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#menu-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #e9d7a9;
+  padding: 1.5em;
+}
+
+#menu-2 ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+}
+
+#menu-2 #load {
+  margin: 1em;
+  color: #e9d7a9;
+  background-color: #4b3132;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+#testimonials {
+  height: 100%;
+  width: 100%;
+  background-color: #d2d09f;
+}
+
+#testimonials h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding-top: 2em;
+}
+
+#testimonials .testimon {
+  margin: 5% 10%;
+  display: flex;
+}
+
+#testimonials .footer {
+  display: block;
+  margin: 0% 2em;
+}
+
+#testimonials p {
+  font-size: 1.5em;
+}
+
+#testimonials span {
+  color: #db8d4e;
+}
+
+#testimonials #bottom {
+  margin-bottom: 1.9em;
+}
+
+#space {
+  height: 110px;
+}
+
+#testimonials a {
+  width: 203px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4b3132;
+  color: #d2d09f;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+#banner-2 figure {
+  margin: 0;
+  position: relative;
+}
+
+#banner-2 img {
+  width: 100%;
+  display: block;
+  min-width: 500px;
+}
+
+#banner-2 figcaption {
+  font-weight: bold;
+  color: #4b3132;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4em;
+  position: absolute;
+  top: 25%;
+  margin: 0 14%;
+}
+
+#banner-2 h2 {
+  font-size: 2.5em;
+  margin: 0.5em;
+}
+
+#banner-2 p {
+  margin: 0;
+  color: #4b3132;
+  text-shadow: 3px 3px #d2d09f;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+#banner-2 a {
+  margin-top: 0.6em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 10em;
+  background-color: #4b3132;
+  color: #d2d09f;
+}
+
+#banner-2 a:hover {
+  opacity: 1;
+  background-color: #8b6364;
+}
+
+#contact {
+  background-color: #e9d7a9;
+}
+
+#contact form {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact form .column {
+  display: block;
+  width: 40%;
+  height: 340px;
+}
+
+#contact h2 {
+  padding-top: 2em;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+#contact input,
+textarea {
+  padding-left: 1em;
+  width: 100%;
+  height: 3em;
+  margin: 2% 0;
+  border: none;
+  background-color: rgb(255, 255, 243);
+}
+
+#contact input[type="text"]:focus,
+textarea:focus {
+  background-color: #4b3132;
+  color: #e9d7a9;
+}
+
+#contact form textarea {
+  height: 128px;
+}
+
+#contact input[type="submit"] {
+  font-size: 1.2em;
+  width: 100px;
+  height: 50px;
+  color: #e9d7a9;
+  background-color: #4b3132;
+  border-radius: 10px;
+  padding: 0%;
+}
+
+footer #footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #d2d09f;
+  height: 270px;
+}
+
+#footer section {
+  width: 30%;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
+#footer-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+#footer-nav li {
+  padding: 0 10px;
+}
+
+#footer-nav a {
+  margin-top: 40px;
+}
+
+#footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer input[type="text"] {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255, 255, 243);
+  padding: 5px;
+}
+
+#footer input[type="text"]:focus {
+  background-color: #4b3132;
+  color: #d2d09f;
+}
+
+#footer form input[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  background-color: #4b3132;
+  color: #d2d09f;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
 }
 
 @media screen and (max-width: 768px) {
