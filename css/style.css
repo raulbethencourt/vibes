@@ -54,7 +54,7 @@ input[type="submit"]:hover {
   margin: auto;
 }
 
-#wrapper header{
+#wrapper header {
   z-index: 1000;
   position: -webkit-sticky;
   position: sticky;
@@ -64,7 +64,7 @@ input[type="submit"]:hover {
 #nav_bar {
   width: 100%;
   background: #d2d09f;
-  display: flex;  
+  display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -180,15 +180,6 @@ input[type="submit"]:hover {
   padding-top: 1.6em;
 }
 
-.tab-content {
-  overflow: hidden;
-  display: none;
-}
-
-#accordion input:checked ~ .tab-content {
-  display: block;
-}
-
 .tab {
   position: relative;
   max-width: 600px;
@@ -216,21 +207,25 @@ input[type="submit"]:hover {
   transition: all 0.4s;
 }
 
-.tab input[type="radios"]:checked + label::after {
-  transform: rotate(90deg);
+.tab input[type="radio"]:checked + label::after {
+  transform: rotate(0.25turn);
 }
 
 .tab-content {
+  display: none;
   overflow: hidden;
   background: #e9d7a9;
-  transition: max-height 0.4s;
-  max-height: 0;
+  transition: height 0.5s;
+  height: 0;
 }
+
+.tab input:checked ~ .tab-content {
+  height: 235px;
+  display: block;
+}
+
 .tab-content p {
   margin: 20px;
-}
-.tab input:checked ~ .tab-content {
-  max-height: 100vh;
 }
 
 #portfolio #row {
@@ -238,15 +233,21 @@ input[type="submit"]:hover {
   height: 100%;
 }
 
+.container {
+  width: 325px;
+  height: 250px;
+  overflow: hidden;
+}
+
 #portfolio img {
   width: 325px;
   height: 250px;
-  display: block;
+  transition: transform 0.5s ease;
 }
 
 #portfolio img:hover {
-  opacity: 0.5;
   cursor: pointer;
+  transform: scale(1.5);
 }
 
 #menu-2 {
@@ -326,10 +327,13 @@ input[type="submit"]:hover {
   position: relative;
 }
 
-#banner-2 img {
-  width: 100%;
-  display: block;
-  min-width: 500px;
+.parallax {
+  background-image: url("../css/img/banner_2.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #banner-2 figcaption {
