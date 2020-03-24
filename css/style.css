@@ -55,6 +55,7 @@ input[type="submit"]:hover {
 }
 
 #wrapper header{
+  z-index: 1000;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -63,7 +64,7 @@ input[type="submit"]:hover {
 #nav_bar {
   width: 100%;
   background: #d2d09f;
-  display: flex;
+  display: flex;  
   justify-content: space-around;
   align-items: flex-end;
 }
