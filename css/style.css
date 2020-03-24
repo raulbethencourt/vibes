@@ -54,6 +54,12 @@ input[type="submit"]:hover {
   margin: auto;
 }
 
+#wrapper header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 #nav_bar {
   width: 100%;
   background: #d2d09f;
