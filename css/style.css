@@ -493,16 +493,12 @@ footer #footer {
 }
 
 @media all and (max-width: 970px) {
-  #banner figcaption {
-    font-size: 14px;
+  body{
+    font-size: 13px;
   }
 }
 
 @media all and (max-width: 768px) {
-  body {
-    font-size: 13px;
-  }
-
   #nav_bar {
     display: flex;
     justify-content: space-between;
