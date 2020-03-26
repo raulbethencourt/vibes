@@ -178,7 +178,6 @@ input[type="submit"]:hover {
 
 .tab {
   position: relative;
-  max-width: 600px;
 }
 
 .tab input {
@@ -484,6 +483,15 @@ footer #footer {
   height: 40px;
 }
 
+@media all and (max-width: 1300px) {
+  #portfolio #row {
+    width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 13px;
@@ -557,6 +565,14 @@ footer #footer {
     width: 100%;
   }
 
+  .tab {
+    width: 100%;
+  }
+
+  .tab label {
+   width: 100%;
+  }
+
   .tab input:checked ~ .tab-content {
     height: 10%;
   }
@@ -564,6 +580,7 @@ footer #footer {
   #portfolio #row {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   #portfolio img {
